@@ -5,17 +5,17 @@ variable "vpc_id" {
 
 variable "secret_rotation_frequency" {
   type    = number
-  default = 30
+  default = 30 # set the rotation frequency in days
 }
 
-variable "docdb_password" {
+variable "master_docdb_password" {
   type    = string
-  default = "set_your_initial_password"
+  default = "<MASTER_USER_PASSWORD>"
 }
 
-variable "docdb_user" {
+variable "master_docdb_user" {
   type = string
-  default = "<ROOT_USER>"
+  default = "<MASTER_USER>"
 }
 
 variable "private-subnet-1"{
@@ -31,5 +31,5 @@ variable "private-subnet-2"{
 variable "user_region" {
   type        = string
   description = "AWS region to use for all resources"
-  default     = "us-east-1"
+  default     = "<REGION>"
 }
