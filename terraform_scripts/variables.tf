@@ -13,7 +13,12 @@ variable "master_docdb_password" {
   default = "<MASTER_USER_PASSWORD>"
 }
 
-variable "master_docdb_user" {
+variable "docdb_app_usr_password" {
+  type = string
+  default = "set_your_initial_password"
+}
+
+variable "docdb_user" {
   type = string
   default = "<MASTER_USER>"
 }
