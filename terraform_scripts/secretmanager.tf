@@ -231,7 +231,7 @@ resource "aws_lambda_permission" "app-user-lambda_permission_to_invoked_by_secre
 
 resource "aws_vpc_endpoint" "secret_manager_end_point" {
   vpc_id = var.vpc_id
-  service_name = "com.amazonaws.us-east-1.secretsmanager"
+  service_name = "com.amazonaws.${data.aws_region.current.name}.secretsmanager"
   vpc_endpoint_type = "Interface"
   private_dns_enabled = true
   subnet_ids = [
