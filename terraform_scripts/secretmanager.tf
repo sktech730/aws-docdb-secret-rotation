@@ -21,7 +21,7 @@ resource "aws_secretsmanager_secret_version" "sample-docdb_secret_version" {
   secret_string = jsonencode(
   {
     "engine" : "mongo",
-    "username": var.master_docdb_password
+    "username": var.master_docdb_user
     "password": var.master_docdb_password,
     "host": aws_docdb_cluster.sample.endpoint
     "port": aws_docdb_cluster.sample.port
