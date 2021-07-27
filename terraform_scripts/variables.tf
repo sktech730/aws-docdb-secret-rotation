@@ -15,12 +15,17 @@ variable "master_docdb_password" {
 
 variable "docdb_app_usr_password" {
   type = string
-  default = "set_your_initial_password"
+  default = "<APP_USER_PASSWORD>"
 }
 
 variable "master_docdb_user" {
   type = string
   default = "<MASTER_USER>"
+}
+
+variable "sample_app_user"{
+  type = string
+  default = "<APP_USER>"
 }
 
 variable "private-subnet-1"{
@@ -38,3 +43,4 @@ variable "user_region" {
   description = "AWS region to use for all resources"
   default     = "<REGION>"
 }
+
