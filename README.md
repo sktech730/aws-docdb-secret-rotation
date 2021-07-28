@@ -44,7 +44,7 @@ AWS account
                 user: "<sample_app_user>",
                 pwd: "<sample_app_usr_password>",
                 roles: 
-                    [{"db":"admin", "role":"<desired_role>" }]
+                    [{"db":"<sample-docdb-1>", "role":"<desired_role>" }]
             }
         )
 
