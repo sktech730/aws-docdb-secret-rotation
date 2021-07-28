@@ -59,7 +59,7 @@ resource "aws_secretsmanager_secret_version" "sample-documentdb-app-user" {
     "masterarn": aws_secretsmanager_secret.sample-documentdb.arn
     "engine" : "mongo",
     "username": var.sample_app_user,
-    "password": var.docdb_app_usr_password,
+    "password": var.sample_app_usr_password,
     "host": aws_docdb_cluster.sample.endpoint
     "port": aws_docdb_cluster.sample.port
     "dbClusterIdentifier": aws_docdb_cluster.sample.cluster_identifier
