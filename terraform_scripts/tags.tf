@@ -1,7 +1,6 @@
 locals {
   # Common tags to be assigned to all resources
   common_tags = {
-    "Environment" = "dev"
-    "application" = "docdb-secret-rotation"
+    "env" = "dev"
   }
 }
