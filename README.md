@@ -7,8 +7,10 @@ through amazon secret manager service
 AWS account
 
 ## Usage
+1] Clone the repo
 
-1] Set the following place holder values in "variables.tf" file as per your account and need.
+2] Set the following place holder values in "variables.tf" file as per your account and need.
+    
     
     set up networking related values
 
@@ -30,13 +32,13 @@ AWS account
 
     review the "tags.tf" file add more tags based on need
     
-2] PEM file
+3] PEM file
     
     download the pem file from "https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem" 
     and place it in following folders
     src/docdb_rotate and src/docdb_multiuser_rotate
 
-3] set up application user in amazon document user
+4] set up application user in amazon document user
     
         db.createUser
         (
