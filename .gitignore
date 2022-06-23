@@ -1,0 +1,3 @@
+terraform_scripts/.terraform.lock.hcl
+terraform_scripts/.terraform/
+terraform_scripts/files/

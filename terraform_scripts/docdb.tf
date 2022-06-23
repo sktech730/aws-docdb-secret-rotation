@@ -21,8 +21,8 @@ resource "aws_docdb_cluster_instance" "sample_instance" {
 resource "aws_docdb_subnet_group" "subnet_group" {
   name = "main"
   subnet_ids = [
-    var.private-subnet-1,
-    var.private-subnet-2
+    var.private_subnet_1,
+    var.private_subnet_2
   ]
   tags = local.common_tags
 }
